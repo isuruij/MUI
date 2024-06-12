@@ -21,13 +21,13 @@ function App() {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: {xs:"column", md:"row"},
             justifyContent: "space-between",
             gap: 4,
           }}
         >
           {serviceList.map((service) => (
-            <Paper elevation={3}>
+            <Paper elevation={3} sx={{width:{xs:1, md:420}}}>
               <Box sx={{m:3}}>
                 <Typography variant="h3">{service}</Typography>
                 <Typography>
